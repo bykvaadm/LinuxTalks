@@ -1,0 +1,14 @@
+#cloud-config
+manage_etc_hosts: localhost
+
+system_info:
+   # This will affect which distro class gets used
+   distro: ubuntu
+   # Default user name + that default users groups (if added/used)
+   default_user:
+     name: bubuntu
+     lock_passwd: True
+     gecos: Ubuntu
+     groups: [adm, audio, cdrom, dialout, dip, floppy, lxd, netdev, plugdev, sudo, video]
+     sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+     shell: /bin/bash
