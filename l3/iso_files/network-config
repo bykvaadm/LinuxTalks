@@ -7,4 +7,4 @@ ethernets:
     match:
       macaddress: "08:00:27:a4:59:05"
     addresses:
-    - 192.168.1.10/24
+    - 192.168.0.131/24
